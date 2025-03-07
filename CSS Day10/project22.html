@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            height: 20px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 85vh;
+        }
+
+        .button{
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+            gap: 5px;
+        }
+         .button button{
+            width: 200px;
+            height: 30px;
+            border-color: rgba(246, 243, 243, 0.2);
+            border-radius: 10px;
+        }
+        .side-bar {
+            padding-top: 40px;
+            background-color: black;
+            color: white;
+            width: 25vw;
+            height: 80vh;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        .side-bar button {
+            border: 1px solid grey;
+            border-radius: 10px;
+            width: 150px;
+            color: white;
+            height: 30px;
+            margin: 3px;
+            background-color: rgba(113, 111, 111, 0.5);
+            margin-left: 4px;
+            
+
+        }
+        footer{
+            background-color: rgb(49, 48, 48);
+            color: white;
+            text-align: center;
+            font-size: smaller;
+            height: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h4>Dashboard</h4>
+    </header>
+    <main>
+        <section class="side-bar">
+            <div>
+             <button>Home</button>
+            </div>
+            <div>
+                <button>Reports</button>
+            </div>
+            <div>
+                <button>Settings</button>
+            </div>
+        </section>
+        <section class="main-content">
+            <h5>Main Content</h5>
+            <div class="button">
+                <div><button>Card 1</button></div>
+                <div><button>Card 3</button></div>
+                <div><button>Card 3</button></div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2025 Dashboard Inc.</p>
+    </footer>
+</body>
+
+</html>

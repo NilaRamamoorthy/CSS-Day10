@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            border: 1px solid;
+        }
+        #item2{
+            grid-area: 1/2/3/4;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="item" id="item1"><p>Item001</p></div>
+            <div class="item" id="item2"><p>Item002</p></div>
+            <div class="item" id="item3"><p>Item003</p></div>
+            <div class="item" id="item4"><p>Item004</p></div>
+            <div class="item" id="item5"><p>Item005</p></div>
+            <div class="item" id="item6"><p>Item006</p></div>
+            <div class="item" id="item7"><p>Item007</p></div>
+            <div class="item" id="item8"><p>Item008</p></div>
+            <div class="item" id="item9"><p>Item009</p></div>
+        </div>
+    </section>
+</body>
+</html>

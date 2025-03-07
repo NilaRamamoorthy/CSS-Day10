@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            height: 90vh;
+            margin-top: 10px;
+        }
+        .side-bar{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: rgb(239, 231, 231);
+            
+        }
+        a:link{
+            text-decoration: none;
+            color: white;
+        }
+        .main-content{
+            margin: 10px;
+        }
+        footer{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Dashboard</h3>
+    </header>
+    <main>
+        <div class="side-bar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Settings</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="main-content">
+            <h3>Main Content</h3>
+        </div>
+    </main>
+    <footer>
+        <p>&copy 2025 Dashboard.All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
